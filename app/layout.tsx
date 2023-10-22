@@ -4,6 +4,7 @@ import './globals.css';
 import Link from 'next/link';
 import { Suspense } from 'react';
 import Loading from './loading';
+import Arch from '../components/arch.jsx';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
@@ -27,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={montserrat.className}>
-      <body className="flex min-h-screen flex-col place-items-center bg-blue-100 px-8 text-center text-blue-900 dark:bg-blue-950 dark:text-blue-100 dark:brightness-125 lg:px-16">
+      <body className="flex min-h-screen flex-col place-items-center bg-blue-200 px-8 text-center text-blue-900 dark:bg-blue-950 dark:text-blue-100 lg:px-16">
         <header className="flex flex-col place-items-center py-12">
           <Link
             href="/"
@@ -47,10 +48,10 @@ export default function RootLayout({
             ))}
           </nav>
         </header>
-        <main className="container flex grow flex-col place-items-center rounded-t-full bg-blue-50 pt-24 ring-2 ring-blue-900 dark:bg-blue-950 dark:ring-blue-100">
-          <div className="flex grow flex-col items-center gap-2">
+        <Arch>
+          <main className="flex grow flex-col items-center gap-2">
             <Suspense fallback={<Loading />}>{children}</Suspense>
-          </div>
+          </main>
           <footer className="flex justify-center pb-4 pt-24">
             <a
               className="text-xs hover:text-blue-500 dark:hover:text-blue-400"
@@ -61,7 +62,7 @@ export default function RootLayout({
               Created by Sierra
             </a>
           </footer>
-        </main>
+        </Arch>
       </body>
     </html>
   );
