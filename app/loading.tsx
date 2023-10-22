@@ -10,17 +10,17 @@ export default function Loading() {
       >
         <path
           d="M49 228C101.125 332.553 240.321 336.759 296 228"
-          className="stroke-blue-500 dark:stroke-blue-400"
+          className="stroke-pink-500 dark:stroke-pink-400"
           strokeWidth="33"
         />
         <path
           d="M49 107L301 249"
-          className="stroke-blue-500 dark:stroke-blue-400"
+          className="stroke-pink-500 dark:stroke-pink-400"
           strokeWidth="33"
         />
         <path
           d="M49 126C102.18 16.2191 244.194 11.8027 301 126"
-          className="stroke-blue-500 dark:stroke-blue-400"
+          className="stroke-pink-500 dark:stroke-pink-400"
           strokeWidth="33"
         />
       </svg>

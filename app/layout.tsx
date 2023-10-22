@@ -28,11 +28,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={montserrat.className}>
-      <body className="flex min-h-screen flex-col place-items-center bg-blue-200 px-8 text-center text-blue-900 dark:bg-blue-950 dark:text-blue-100 lg:px-16">
+      <body className="flex min-h-screen flex-col place-items-center bg-pink-200 px-8 text-center text-pink-900 dark:bg-pink-950 dark:text-pink-100 lg:px-16">
         <header className="flex flex-col place-items-center py-12">
           <Link
             href="/"
-            className="text-3xl hover:text-blue-500 dark:hover:text-blue-400"
+            className="text-3xl hover:text-pink-500 dark:hover:text-pink-400"
           >
             Welcome!
           </Link>
@@ -41,7 +41,7 @@ export default function RootLayout({
               <Link
                 key={path}
                 href={path}
-                className="hover:text-blue-500 dark:hover:text-blue-400"
+                className="hover:text-pink-500 dark:hover:text-pink-400"
               >
                 {title}
               </Link>
@@ -54,7 +54,7 @@ export default function RootLayout({
           </main>
           <footer className="flex justify-center pb-4 pt-24">
             <a
-              className="text-xs hover:text-blue-500 dark:hover:text-blue-400"
+              className="text-xs hover:text-pink-500 dark:hover:text-pink-400"
               href="https://sierraismy.name"
               target="_blank"
               rel="noopener noreferrer"
